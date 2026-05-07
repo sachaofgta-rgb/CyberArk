@@ -3,54 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Ark | Join Us</title>
+    
+    <title>Cyber Ark | Tools, Hack & Tuto</title>
+    <meta name="description" content="Bienvenue chez Cyber Ark. Retrouvez nos meilleurs tools, tutoriels informatiques et ressources sur le hacking éthique.">
+    <meta property="og:title" content="Cyber Ark | Tools & Hack">
+    <meta property="og:description" content="Le centre ultime pour tes scripts et tutoriels préférés. Rejoins-nous !">
+    <meta property="og:theme-color" content="#ff0000">
+
     <style>
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
+            flex-direction: column; /* Permet d'aligner le texte sous le bouton */
             justify-content: center;
             align-items: center;
-            background-color: #050505; /* Noir profond */
-            font-family: 'Arial', sans-serif;
+            background-color: #050505;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
+            text-align: center;
         }
 
-        .discord-btn {
-            text-decoration: none;
-            color: #ff0000; /* Rouge comme ton tool */
-            font-size: 3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 10px;
-            padding: 20px 40px;
-            border: 2px solid #ff0000;
-            border-radius: 10px;
-            transition: 0.4s;
-            box-shadow: 0 0 15px #ff0000;
-            position: relative;
-        }
-
-        .discord-btn:hover {
-            background-color: #ff0000;
-            color: #ffffff;
-            box-shadow: 0 0 50px #ff0000, 0 0 100px #ff0000;
-            transform: scale(1.1);
-        }
-
-        /* Petit effet de scanline en arrière-plan pour le style hack */
+        /* Effet de scanline */
         body::before {
             content: " ";
             position: absolute;
             top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
-                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
             background-size: 100% 2px, 3px 100%;
             pointer-events: none;
+            z-index: 2;
+        }
+
+        .description {
+            color: #ffffff;
+            z-index: 3;
+            margin-bottom: 30px;
+            max-width: 600px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+
+        .discord-btn {
+            text-decoration: none;
+            color: #ff0000;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            padding: 20px 40px;
+            border: 3px solid #ff0000;
+            border-radius: 15px;
+            transition: all 0.4s ease-in-out;
+            box-shadow: 0 0 20px #ff0000;
+            z-index: 3;
+            background: transparent;
+            animation: pulse 2s infinite;
+        }
+
+        .discord-btn:hover {
+            background-color: #ff0000;
+            color: #ffffff;
+            box-shadow: 0 0 40px #ff0000, 0 0 80px #ff0000;
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 15px #ff0000; }
+            50% { box-shadow: 0 0 30px #ff0000; }
+            100% { box-shadow: 0 0 15px #ff0000; }
         }
     </style>
 </head>
 <body>
+
+    <div class="description">
+        <h1>CYBER ARK</h1>
+        <p>Le centre de ressources ultime : <b>Tools, Hack & Tuto.</b></p>
+    </div>
 
     <a href="https://discord.gg/YPDpJhASfk" class="discord-btn">Discord</a>
 
